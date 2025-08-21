@@ -1,0 +1,61 @@
+@import '../../utils/variables.scss';
+
+// ===== HEADER =====
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 15px 16px 20px 16px; // header spacing
+    width: 95%;
+
+    // ===== LOGO =====
+    img {
+        @media screen and (max-width: 768px) {
+            width: 120px; // smaller logo on mobile
+        }
+    }
+
+    // ===== NAVBAR =====
+    .navbar__links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 19px;
+        padding: 0;
+        gap: 57px;
+        height: 34px;
+
+        @media screen and (max-width: 1024px) {
+            justify-content: space-around; // adapt on tablet
+        }
+
+        a {
+            color: $Text-color-navbar;
+            text-decoration: none;
+            list-style: none;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            margin-left: 50px;
+            cursor: pointer;
+
+            @media screen and (max-width: 768px) {
+                font-size: 13px;
+                text-transform: uppercase;
+                margin-left: 20px;
+            }
+
+            &.active {
+                color: $Theme-color;
+                text-shadow: $Text-active-link;
+            }
+
+            &:hover {
+                text-decoration-line: underline;
+            }
+        }
+    }
+}
