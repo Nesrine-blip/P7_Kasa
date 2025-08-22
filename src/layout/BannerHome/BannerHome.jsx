@@ -13,5 +13,6 @@ function BannerHome() {
     </div>
         
     )
+    
 }
 export default BannerHome;
