@@ -11,7 +11,6 @@ async function logementsGetAll() {
   try {
     const response = await fetch("/logements.json");
     const data = await response.json();
-    console.log("✅ logements.json fetched successfully:", data); // ← Maintenant accessible
     return data;
   } catch (error) {
     console.error("Error fetching logements:", error);

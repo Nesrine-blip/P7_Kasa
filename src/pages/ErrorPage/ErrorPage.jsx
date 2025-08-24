@@ -1,9 +1,16 @@
-const ErrorPage = () => {
+import { Link } from "react-router-dom";
+
+
+function ErrorPage() {
+  
   return (
-    <div>
-      <h1>404 - Page not found ❌</h1>
-      <p>Sorry, the page you are looking for does not exist.</p>
-    </div>
+    <>
+      <div className="error-page">
+        <h1>404</h1>
+        <h2>Oups! La page que vous demandez n'existe pas.</h2>
+        <Link to="/">Retourner sur la page d’accueil</Link>
+      </div>
+    </>
   );
 };
 

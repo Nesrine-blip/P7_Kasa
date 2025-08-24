@@ -4,6 +4,7 @@ import LogementPage from "./pages/LogementPage/LogementPage.jsx";
 import AboutPage from "./pages/AboutPage/AboutPage.jsx";
 import ErrorPage from "./pages/ErrorPage/ErrorPage.jsx";
 import Header from "./layout/Header/Header.jsx";
+import Footer from "./layout/Footer/Footer.jsx";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/logement" element={<LogementPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };
