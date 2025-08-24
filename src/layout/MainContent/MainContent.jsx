@@ -1,6 +1,5 @@
-// src/layout/MainContent/MainContent.jsx
 function MainContent({ children }) {
-  return <main className="main-content">{children}</main>;
+  return <div className="main-Content">{children}</div>;
 }
 
 export default MainContent;

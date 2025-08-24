@@ -1,0 +1,13 @@
+.main-content {
+  margin: 0 auto;
+  max-width: 1240px;
+  margin-bottom: 1.25rem;
+  min-height: 60vh;
+
+  flex: 1;   // ✅ prend l’espace dispo entre header et footer
+
+  @media screen and (min-width: 375px) {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}

@@ -3,13 +3,14 @@
 // --- Container of each collapse ---
 .collapseContainer {
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   margin-left: 110px;
   overflow: hidden;
   max-width: 1240px;
   width: 85%;
   @media screen and (max-width: 768px) {
     width: 100%;
+    margin-left: 0;
   }
 
   // --- Header: title + arrow ---
@@ -20,7 +21,7 @@
     background-color: $Theme-color;
     border-radius: 10px;
     height: 52px;
-    padding: 0 10px;
+    padding: 8 10px;
     cursor: pointer;
 
     @media screen and (max-width: 768px) {
