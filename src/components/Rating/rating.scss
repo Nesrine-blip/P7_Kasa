@@ -1,0 +1,23 @@
+@import '../../utils/variables.scss';
+
+.logement-rating {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px 0;
+}
+
+
+.starActive {
+    height: 36px;
+}
+
+.starInactive {
+    height: 36px;
+}
+
+.starActive, .starInactive {
+    @media screen and (max-width: 768px) {
+        height: 18px;
+    }
+}

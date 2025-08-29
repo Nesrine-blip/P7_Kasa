@@ -1,0 +1,24 @@
+@import '../../utils/variables.scss';
+
+
+/* Container pour aligner les tags côte à côte */
+.logement-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+/* Style individuel de chaque tag */
+.tags {
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    background: $Theme-color;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px 30px;
+    font-size: 14px;
+    white-space: nowrap;
+}

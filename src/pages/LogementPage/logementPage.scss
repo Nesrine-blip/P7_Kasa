@@ -1,0 +1,42 @@
+@import '../../utils/variables.scss';
+
+/* Bloc global : contient host info + rating */
+.logement-host-rating-block {
+  display: flex;
+  flex-direction: column;  /* rating en dessous */
+  align-items: flex-end;   /* aligné à droite */
+  gap: 15px;
+  margin: 20px 0;
+}
+
+/* Ligne nom + photo */
+.logement-host-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;               /* espace entre nom et photo */
+
+  .host-name {
+    color: $Theme-color;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    text-align: right;
+    
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  .host-picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+/* Rating sous le bloc, aligné à droite */
+.logement-rating {
+  display: flex;
+  justify-content: flex-end;
+}

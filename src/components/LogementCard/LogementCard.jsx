@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
-// Composant qui affiche une carte de logement cliquable
+
+
 function LogementCard({ id, imageUrl, title }) {
   return (
     <Link 

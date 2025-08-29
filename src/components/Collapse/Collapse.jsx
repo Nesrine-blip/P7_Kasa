@@ -7,7 +7,7 @@ function Collapse(props) {
 
   // --- Function to toggle open/close ---
   const toggleCollapse = () => {
-    setIsOpen(!isOpen); 
+    setIsOpen(!isOpen);
   };
 
   // --- Render ---

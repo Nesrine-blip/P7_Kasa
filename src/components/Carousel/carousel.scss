@@ -1,0 +1,62 @@
+.logement {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__carousel {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    &--slider {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; // remplir le conteneur correctement
+    }
+
+    &__arrowleft,
+    &__arrowright {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      padding: 10px;
+      transition: background 0.3s;
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.8);
+      }
+    }
+
+    &__arrowleft {
+      left: 10px;
+    }
+
+    &__arrowright {
+      right: 10px;
+    }
+
+    &__slide-indicator {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+  }
+}

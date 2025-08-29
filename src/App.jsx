@@ -15,7 +15,7 @@ import MainContent from "./layout/MainContent/MainContent.jsx";
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/logement" element={<LogementPage />} />
+          <Route path="/logement/:id" element={<LogementPage />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </MainContent>
