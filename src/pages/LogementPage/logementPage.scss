@@ -15,7 +15,7 @@
   align-items: center;
   gap: 10px;               /* espace entre nom et photo */
 
-  .host-name {
+  h3 {                     /* ← Cible directement les h3 */
     color: $Theme-color;
     font-size: 18px;
     font-weight: 500;
@@ -27,7 +27,7 @@
     }
   }
 
-  .host-picture {
+  img {                    /* ← Cible directement les img */
     width: 64px;
     height: 64px;
     border-radius: 50%;
