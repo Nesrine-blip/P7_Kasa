@@ -3,9 +3,10 @@
 .logement-page {
   border-radius: 25px;
   max-width: 1240px;
-  margin: 0 auto;
   width: 95%;
+  margin: 0 auto;
 
+  /* --- MAIN INFO & HOST --- */
   .logement-info {
     display: flex;
     justify-content: space-between;
@@ -19,6 +20,7 @@
       align-items: flex-start;
     }
 
+    /* left block: title, location, tags */
     .logement-main-info {
       flex: 1;
 
@@ -42,6 +44,7 @@
       }
     }
 
+    /* right block: host info + rating */
     .logement-host-block {
       display: flex;
       flex-direction: column;
@@ -88,34 +91,36 @@
     }
   }
 
+  /* --- COLLAPSES SECTION --- */
   .logement-details {
     display: flex;
-    margin-top: 25px;
+    gap: 25px;
+    margin: 25px 0 40px 0;
 
     @media screen and (max-width: 768px) {
       flex-direction: column;
       gap: 20px;
-      align-items: center;
       margin-top: 20px;
     }
 
-    /* --- Adaptation pour Collapse --- */
-    .collapseContainer {
-      
-      
+    > .collapseContainer {
+      flex: 1;
+      margin-left: 0;
+      margin-bottom: 0;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
 
       .collapseHeader {
         font-size: 22px;
         color: $Theme-color;
         font-weight: 500;
-        margin-bottom: 10px;
         cursor: pointer;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        
-    
-    }
+      }
 
       .collapseContent-parent {
         margin-top: 10px;
@@ -131,8 +136,12 @@
 
         ul {
           margin: 0;
-          padding-left: 20px;
+          padding-left: 0;
           list-style: none;
+
+          li {
+            padding: 3px 0;
+          }
         }
       }
     }

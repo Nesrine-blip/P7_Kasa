@@ -4,7 +4,7 @@
   margin-bottom: 1.25rem;
   min-height: 60vh;
 
-  flex: 1;   // ✅ prend l’espace dispo entre header et footer
+  flex: 1; // takes available space between header and footer
 
   @media screen and (min-width: 375px) {
     padding-left: 0.5rem;

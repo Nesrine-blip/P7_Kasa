@@ -1,9 +1,15 @@
 @import '../../utils/variables.scss';
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
 
 // ===== Banner container =====
 .banner {
-  margin: auto;
-  width: 100%;
+  margin: 0 auto;
+  width: 95%;
   max-width: 1240px;
   height: 222px;              
   margin-bottom: 30px;        

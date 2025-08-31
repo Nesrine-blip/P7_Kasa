@@ -2,12 +2,10 @@
 
 // --- Container of each collapse ---
 .collapseContainer {
-  border-radius: 10px;
   margin-bottom: 15px;
-  margin-left: 110px;
   overflow: hidden;
   max-width: 1240px;
-  width: 85%;
+  width: 100%;
   @media screen and (max-width: 768px) {
     width: 100%;
     margin-left: 0;
@@ -41,6 +39,7 @@
       height: 24px;
       width: 24px;
       color: white;
+      margin-right: 10px;
 
       @media screen and (max-width: 768px) {
         height: 18px;

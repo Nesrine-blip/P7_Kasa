@@ -7,13 +7,18 @@ header {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 15px 16px 20px 16px; // header spacing
-    width: 95%;
+    padding: 15px 20px 20px 20px; 
+    width: 87%;
+    @media screen and (max-width: 768px) {
+           padding: 15px 10px 0 7px;
+        }
 
     // ===== LOGO =====
     img {
+        margin-left: 10px;
         @media screen and (max-width: 768px) {
-            width: 120px; // smaller logo on mobile
+            width: 120px;
+            margin-left: 0; // smaller logo on mobile
         }
     }
 
@@ -23,9 +28,9 @@ header {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        margin: 19px;
+        margin: 30px;
         padding: 0;
-        gap: 57px;
+        gap: 15px;
         height: 34px;
 
         @media screen and (max-width: 1024px) {
@@ -49,7 +54,7 @@ header {
             }
 
             &.active {
-                color: $Theme-color;
+                text-decoration: underline;
                 text-shadow: $Text-active-link;
             }
 

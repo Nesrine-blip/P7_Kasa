@@ -1,21 +1,23 @@
-/*========== Theme colors ==========*/
-    $Theme-color: #ff6060;
-    $Background-color: #F6F6F6;
-    $Text-color: white;
-    $Text-color-navbar: black;
-    $Footer-color: black;
+/*========== THEME COLORS ==========*/
+$Theme-color: #ff6060;            // main theme color
+$Background-color: #F6F6F6;       // page background
+$Text-color: white;                // general text color
+$Text-color-navbar: black;         // navbar links
+$Footer-color: black;              // footer text
 
-    /* Couleur du masque sur la bannière */
-    $Mask-banner-A: #000; /* Light-mod */
-    $Mask-banner-B: #000000ad; /* Dark-mod */
+/* Banner mask overlay */
+$Mask-banner-A: #000;              // light overlay
+$Mask-banner-B: #000000ad;         // dark overlay
 
-    /* Dégradé de couleur sur les vignettes dans la gallerie */
-    $Linear-color: linear-gradient(to top, #863535, #ff6060);
+/* Gradient for gallery thumbnails */
+$Linear-color: linear-gradient(to top, #863535, #ff6060);
 
-    /* Style de l'ombre du lien actif dans la navbar */
-    $Text-active-link: 0px 0px 5px rgba(137,52,52,0.4);
+/* Navbar active link shadow */
+$Text-active-link: 0px 0px 5px rgba(137,52,52,0.4);
 
-    /* Ombre/Lueur du carrousel */
-    $Shadow-carousel: rgba(0, 0, 0, 0.2) 0px 8px 24px;
-    $Glow-carousel: rgba(255, 255, 255, 0.157) 0px 8px 24px;
-    $Primary-font: 'Montserrat', sans-serif;
+/* Carousel shadow and glow */
+$Shadow-carousel: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+$Glow-carousel: rgba(255, 255, 255, 0.157) 0px 8px 24px;
+
+/* Primary font */
+$Primary-font: 'Montserrat', sans-serif;

@@ -1,3 +1,4 @@
+// render main content wrapper
 function MainContent({ children }) {
   return <div className="main-Content">{children}</div>;
 }
