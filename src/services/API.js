@@ -1,7 +1,7 @@
  /* ===== CHECK FETCH SUPPORT ===== */
 if (!window.fetch) {
   alert(
-    "Your browser does not support the Fetch API. Please update your browser."
+    "Votre navigateur ne prend pas en charge l'API Fetch. Veuillez mettre à jour votre navigateur."
   );
 }
 

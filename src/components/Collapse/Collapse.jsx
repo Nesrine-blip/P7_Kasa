@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 function Collapse(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,23 +12,26 @@ function Collapse(props) {
 
   // --- Render ---
   return (
-    <div className="collapseContainer" onClick={toggleCollapse}>
+    <div className="collapseContainer">
       
       {/* --- Header : title + arrow --- */}
-      <div className={"collapseHeader " + (isOpen ? "collapseHeaderOpened" : "collapseHeaderClosed")}>
+      <div 
+        className={"collapseHeader " + (isOpen ? "collapseHeaderOpened" : "collapseHeaderClosed")}
+        onClick={toggleCollapse}
+      >
         <div>{props.title}</div>
         <div>
-          <FontAwesomeIcon icon={isOpen ? faChevronUp : faChevronDown} />
+          
+          <FontAwesomeIcon icon={faChevronUp} className="chevron" />
         </div>
       </div>
 
-      {/* --- Content : shown only if open --- */}
+      
       {isOpen && (
         <div className="collapseContent-parent">
           <div className="collapseContent">{props.children}</div>
         </div>
       )}
-
     </div>
   );
 }
