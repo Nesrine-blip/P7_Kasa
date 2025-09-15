@@ -9,13 +9,12 @@
 @use "./components/Carousel/carousel.scss";
 @use "./components/Collapse/collapse.scss";
 @use "./components/LogementCard/logementCard.scss";
-@use "./components/LogementGallery/logementGallery.scss";
+
 @use "./components/Rating/rating.scss";
 @use "./components/Tags/tags.scss";
 
 
 /*=============== PAGES ===============*/
-@use "./pages/HomePage/homePage.scss";
 @use "./pages/AboutPage/aboutPage.scss";
 @use "./pages/LogementPage/logementPage.scss";
 @use "./pages/ErrorPage/errorPage.scss";

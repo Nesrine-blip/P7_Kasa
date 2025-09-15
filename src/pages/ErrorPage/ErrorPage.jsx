@@ -12,7 +12,7 @@ function ErrorPage() {
       <h2>Oups! La page que vous demandez n'existe pas.</h2>
       
       {/* link back to home */}
-      <Link to="/">Retourner sur la page d’accueil</Link>
+      <Link to="/" className="error-Link">Retourner sur la page d’accueil</Link>
     </div>
   );
 };
